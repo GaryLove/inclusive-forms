@@ -1,0 +1,26 @@
+# This is a workflow to build a fresh version of the static site
+name: 11ty Build
+
+#Triggered on push
+on: [push]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build_deploy:
+    # Set up the platform it will run on
+    runs-on: ubuntu-18.04
+
+    # Steps are a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out the repository under $GITHUB_WORKSPACE, so the job can access it
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Call this helper action to install eleventy and run a build
+        uses: TartanLlama/actions-eleventy@v1.1
+      # Use gh-pages to take everythign from _site and put it into gh-pages
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v1.1.0
+        env:
+          PUBLISH_DIR: _site 
+          PUBLISH_BRANCH: gh-pages
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
