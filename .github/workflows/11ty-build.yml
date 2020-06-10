@@ -16,6 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       # Call this helper action to install eleventy and run a build
+      - name: Build
         uses: TartanLlama/actions-eleventy@v1.1
       # Use gh-pages to take everythign from _site and put it into gh-pages
       - name: Deploy
