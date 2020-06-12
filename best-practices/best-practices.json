@@ -1,0 +1,6 @@
+{
+    "layout": "best-practices.liquid",
+    "permalink": "{{ pageTitle | slug }}.html",
+    "partnerText": "Partner",
+    "tags": ["best-practices"]
+}
