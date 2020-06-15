@@ -1,7 +1,74 @@
 ---
 label: Best Practices
 hide_body: false
+display_field: pageTitle
 fields:
 - type: text
   name: pageTitle
-  label: pageTitle
+  label: Page Title
+- name: thumbnail
+  type: file
+  config:
+    maxSize: 64
+  label: Thumbnail
+- name: partner
+  type: field_group
+  config: {}
+  fields:
+  - name: partner-name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: partner-url
+    type: text
+    config:
+      required: false
+    label: URL
+  - name: partner-donate
+    type: text
+    config:
+      required: false
+    label: Donation url
+  - name: partner-description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html
+    label: Description
+  - name: partner-logo
+    type: file
+    config:
+      maxSize: 64
+    label: Logo
+  label: Partner
+- name: recommendation-adults
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Recommendations for adults
+- name: recommendation-children
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Adaptations for children & teens
+- name: methodology
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html
+  label: Methodology
