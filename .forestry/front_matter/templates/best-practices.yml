@@ -1,0 +1,7 @@
+---
+label: Best Practices
+hide_body: false
+fields:
+- type: text
+  name: pageTitle
+  label: pageTitle
