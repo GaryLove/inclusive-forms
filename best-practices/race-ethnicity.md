@@ -1,4 +1,4 @@
 ---
 pageTitle: Race and ethnicity
 ---
-Living together!
+Living together in peace and harmony.
