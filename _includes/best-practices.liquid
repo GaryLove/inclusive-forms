@@ -5,11 +5,29 @@
     <title>Inclusive Forms - Someday</title>
 </head>
 <body>
+    
     <h1>{{ pageTitle }}</h1>
-    <h2>{{ partner-name }}</h2>
+    <h3>thumbnail</h3>
+    {{ thumbnail }}
+    <h2>Partner</h2>
+    <h3>partner.partner-name</h3>
+    {{ partner.partner-name }}
+    <h3>partner.partner-url</h3>
+    {{ partner.partner-url }}
+    <h3>partner.partner-donate</h3>
+    {{ partner.partner-donate }}
+    <h3>partner.partner-description</h3>
+    {{ partner.partner-description }}
+    <h3>partner.partner-partner-logo</h3>
+    {{ partner.partner-partner-logo }}
+    <h2>Best practices (content)</h2>
     {{ content }}
-    <h3>Chidren</h3>
+    <h3>recommendation-adults</h3>
+    {{ recommendation-adults }}
+    <h3>recommendation-children</h3>
     {{ recommendation-children }}
+    <h3>methodology</h3>
+    {{ methodology }}
     <hr>
     {% include _form-race-children.html %}
 </body>
