@@ -10,7 +10,8 @@ partner:
     underserved by their schools and districts.<br>
   partner-logo: "/images/pride-vs-shame.png"
 recommendation-adults: "<p>How do I enter raw HTML?</p>"
-recommendation-children: "<p>Raw HTML will be needed here</p>"
+recommendation-children: "<p>Raw HTML will be needed here</p><p>{% include _form-race-children
+  %}</p>"
 methodology: "<p>Perhaps snippets might work?</p>"
 
 ---
