@@ -23,9 +23,11 @@ recommendation-children: |-
   &lt;input type="text" value="try 2"&gt;
   &lt;input type="submit" value="save"&gt;
   &lt;/form&gt;</code></code></pre>
-methodology: "<p>Perhaps snippets might work?</p>"
+methodology: "<pre><code>Perhaps snippets might work?</code></pre>"
 
 ---
+## Best Practices
+
 Living together in peace and harmony.
 
 I don't want to go to school.  I just want to break the rules.
@@ -33,10 +35,18 @@ I don't want to go to school.  I just want to break the rules.
 * This is where I put text
 * And more text.
 
+Hooray.
+
+Are you kidding?  This works now.
+
+## Recommendation for Adults
+
 Nah nah nah na naaaaaaaaaaaaa.
 
 {% include _form-race-children.html %}
 
-Hooray.
+## Adaptations for Children & Teens
 
-Are you kidding?  This works now.
+Nah nah nah na naaaaaaaaaaaaa.
+
+{% include _form-race-children.html %}
