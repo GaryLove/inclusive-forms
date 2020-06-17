@@ -12,17 +12,17 @@ partner:
 recommendation-adults: |-
   <p>How do I enter raw HTML?</p>
 
-  {% include _form-race-children %}
+  {% include _form-race-children.html %}
 
   <form>
   <input type="text" value="try 1">
   <input type="submit" value="save">
   </form>
-recommendation-children: |
-  <p>Raw HTML will be needed here</p><p>{% include _form-race-children %}</p><p>&lt;form&gt;</p><p>&lt;input type="text" value="try 1"&gt;</p><p>&lt;input type="submit" value="save"&gt;</p><p>&lt;/form&gt;</p><pre><code>&lt;form&gt;
+recommendation-children: |-
+  <p>Raw HTML will be needed here</p><p>{% include _form-race-children.html %}</p><p>&lt;form&gt;</p><p>&lt;input type="text" value="try 1"&gt;</p><p>&lt;input type="submit" value="save"&gt;</p><p>&lt;/form&gt;</p><pre><code><code>&lt;form&gt;
   &lt;input type="text" value="try 2"&gt;
   &lt;input type="submit" value="save"&gt;
-  &lt;/form&gt;</code></pre>
+  &lt;/form&gt;</code></code></pre>
 methodology: "<p>Perhaps snippets might work?</p>"
 
 ---
