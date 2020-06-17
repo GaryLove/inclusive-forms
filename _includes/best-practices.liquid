@@ -16,23 +16,27 @@
         <div class="column">
                 
             <h1>{{ pageTitle }}</h1>
-            <h3>thumbnail</h3>
-            {{ thumbnail }}
-            <h2>Partner</h2>
-            <h3>partner.partner-name</h3>
-            {{ partner.partner-name }}
-            <h3>partner.partner-url</h3>
-            {{ partner.partner-url }}
-            <h3>partner.partner-donate</h3>
-            {{ partner.partner-donate }}
-            <h3>partner.partner-description</h3>
-            {{ partner.partner-description }}
-            <h3>partner.partner-partner-logo</h3>
-            {{ partner.partner-partner-logo }}
-
-            {{ content }}
-            <h2>Methodology</h2>
-            {{ methodology }}
+            Published: {{ page.date | date: "%B %e, %Y" }}<br />
+            {% if lastmod %}
+            Last modified: {{ lastmod | date: "%B %e, %Y" }}
+            {% endif %}
+            <img src="{{ thumbnail }}">
+            <div id="partner">
+                {{ partner.partner-name }}
+                <img src="{{ partner.partner-logo }}">
+                <ul>
+                    <li><a href="{{ partner.partner-url }}">{{ partner.partner-url }}</a></li>
+                    <li><a href="{{ partner.partner-donate }}">{{ partner.partner-donate }}</a></li>
+                </ul>
+                <p>{{ partner.partner-description }}</p>
+            </div>
+            <div id="recommendation">
+                {{ content }}
+            </div>
+            <div id="methodology">
+                <h2>Methodology</h2>
+                {{ methodology }}
+            </div>
         </div>
     </div>
 </div>

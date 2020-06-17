@@ -1,6 +1,6 @@
 ---
 layout: front.liquid
-pageTitle: Front page stuff
+pageTitle: Front page
 ---
 {% for best-practice in collections.best-practices %}
 <h2><a href="{{ best-practice.url }}">{{ best-practice.data.pageTitle }}</a></h2>
