@@ -9,7 +9,7 @@ partner:
     outcomes, and life options for students and families who have been historically
     underserved by their schools and districts.<br>
   partner-logo: "/images/pride-vs-shame.png"
-methodology: "<pre><code>Perhaps snippets might work?</code></pre>"
+methodology: "<p>I'm all about that dology.</p>"
 
 ---
 ## Best Practices
