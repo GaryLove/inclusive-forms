@@ -45,24 +45,6 @@ fields:
       maxSize: 64
     label: Logo
   label: Partner
-- name: recommendation-adults
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: html-blocks
-  label: Recommendations for adults
-- name: recommendation-children
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: html-blocks
-  label: Adaptations for children & teens
 - name: methodology
   type: textarea
   default: ''
