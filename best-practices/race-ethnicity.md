@@ -5,7 +5,7 @@ partner:
   partner-name: National Equity Project
   partner-url: https://www.nationalequityproject.org/
   partner-donate: https://www.nationalequityproject.org/donate
-  partner-description: NEP’s mission is to dramatically improve educational experiences,
+  partner-description: NEP’s mission is to *dramatically* improve educational experiences,
     outcomes, and life options for students and families who have been historically
     underserved by their schools and districts.<br>
   partner-logo: "/images/pride-vs-shame.png"
