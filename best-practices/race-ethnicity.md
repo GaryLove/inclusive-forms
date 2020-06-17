@@ -9,7 +9,15 @@ partner:
     outcomes, and life options for students and families who have been historically
     underserved by their schools and districts.<br>
   partner-logo: "/images/pride-vs-shame.png"
-recommendation-adults: "<p>How do I enter raw HTML?</p>"
+recommendation-adults: |-
+  <p>How do I enter raw HTML?</p>
+
+  {% include _form-race-children %}
+
+  <form>
+  <input type="text" value="try 1">
+  <input type="submit" value="save">
+  </form>
 recommendation-children: |
   <p>Raw HTML will be needed here</p><p>{% include _form-race-children %}</p><p>&lt;form&gt;</p><p>&lt;input type="text" value="try 1"&gt;</p><p>&lt;input type="submit" value="save"&gt;</p><p>&lt;/form&gt;</p><pre><code>&lt;form&gt;
   &lt;input type="text" value="try 2"&gt;
