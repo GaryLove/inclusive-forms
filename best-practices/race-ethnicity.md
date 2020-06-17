@@ -29,10 +29,10 @@ Are you kidding?  This works now.
 
 Nah nah nah na naaaaaaaaaaaaa.
 
-{% include _form-race-children.html %}
+{% include forms/race-children.html %}
 
 ## Adaptations for Children & Teens
 
 Nah nah nah na naaaaaaaaaaaaa.
 
-{% include _form-race-children.html %}
+{% include /forms/race-children.html %}
