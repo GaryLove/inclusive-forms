@@ -35,6 +35,8 @@ I don't want to go to school.  I just want to break the rules.
 
 Nah nah nah na naaaaaaaaaaaaa.
 
+{% include _form-race-children.html %}
+
 Hooray.
 
 Are you kidding?  This works now.
