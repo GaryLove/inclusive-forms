@@ -7,7 +7,6 @@ sections:
 - type: document
   path: index.md
   label: Front Page
-  match: "**/*"
 - type: directory
   path: best-practices
   label: Best Practices
