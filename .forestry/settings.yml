@@ -4,6 +4,9 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: index.md
+  label: Front Page
 - type: directory
   path: best-practices
   label: Best Practices

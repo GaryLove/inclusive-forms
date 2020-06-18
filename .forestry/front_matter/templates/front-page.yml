@@ -1,0 +1,11 @@
+---
+label: Front Page
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+- type: text
+  name: pageTitle
+  label: Page Title
