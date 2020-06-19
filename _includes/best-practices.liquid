@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
-<body>
+<body id="is-best-practice">
 <div class="container">
     <div class="row">
-        <div class="column">
+        <div class="column" id="content">
                 
             <h1>{{ pageTitle }}</h1>
             Published: {{ page.date | date: "%B %e, %Y" }}<br />
@@ -37,6 +37,13 @@
                 <h2>Methodology</h2>
                 {{ methodology }}
             </div>
+        </div>
+        <div class="column" id="navigation">
+            <ul>
+            {% for best-practice in collections.best-practices %}
+                <li{% if page.url == best-practice.url %} class="active"{% endif %}><a href="{{ best-practice.url }}">{{ best-practice.data.pageTitle }}</a></li>
+            {% endfor %}
+            </ul>
         </div>
     </div>
 </div>

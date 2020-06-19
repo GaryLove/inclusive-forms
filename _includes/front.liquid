@@ -10,15 +10,21 @@
         <link rel="stylesheet" href="/css/main.css">
         <link rel="icon" type="image/png" href="images/favicon.png">
     </head>
-    <body>
+    <body id="is-front-page">
         <div class="container">
             <div class="row">
                 <div class="column">
                     <h1>{{ pageTitle }}</h1>
+                    <div id="best-practices">
                     {% for best-practice in collections.best-practices %}
-                        <h2><a href="{{ best-practice.url }}">{{ best-practice.data.pageTitle }}</a></h2>
-                        <em>{{ best-practice.date | date: "%Y-%m-%d" }}</em>
+                        <div class="best-practice"> 
+                            <h2><a href="{{ best-practice.url }}">{{ best-practice.data.pageTitle }}</a></h2>
+                            Published: {{ best-practice.date | date: "%B %e, %Y" }}<br />
+                            <a href="{{ best-practice.url }}"><img src="{{ best-practice.data.thumbnail }}"></a>
+                            {{ best-practice.data.methodology }}
+                        </div>
                     {% endfor %}
+                    </div>
                     {{ content }}
                 </div>
             </div>
