@@ -1,38 +1,30 @@
 ---
 pageTitle: Race and ethnicity
-thumbnail: "/images/science-is-mean.jpg"
+thumbnail: "/images/square-gradient.gif"
 partner:
   partner-name: National Equity Project
   partner-url: https://www.nationalequityproject.org/
   partner-donate: https://www.nationalequityproject.org/donate
-  partner-description: NEP’s mission is to *dramatically* improve educational experiences,
+  partner-description: NEP’s mission is to dramatically improve educational experiences,
     outcomes, and life options for students and families who have been historically
-    underserved by their schools and districts.<br>
-  partner-logo: "/images/pride-vs-shame.png"
-methodology: "<p>I'm all about that dology.</p>"
+    underserved by their schools and districts.
+  partner-logo: "/images/rect-gradient.gif"
+methodology: "<p></p>"
 
 ---
 ## Best Practices
 
-Living together in peace and harmony.
-
-I don't want to go to school.  I just want to break the rules.
-
-* This is where I put text
-* And more text.
-
-Hooray.
-
-Are you kidding?  This works now.
+* Avoid use of the word “other” as a category for collecting race and ethnicity. 
+* Avoid having “Two or more races” as an option, and instead allow for multiselect of all races and ethnicities that apply to an individual’s ancestry. 
+* Use the nomenclature of the people whose data is being collected. Work with your community to learn how they self-identify.
+* If you’re collecting data to pass along to a governmental or educational agency that uses “other” or “two more more races” as options, disclose how that data will be mapped to these options but still adhere to the below guidelines for your collection. 
+* Use your power and advocacy to petition organizations and agencies who use “other” or “two or more races” to adopt these recommendations for their own data collection. 
+* Revisit how your organization labels race and ethniciy fields annually. The words people use to self-identify their race and ethnicity are not static.
 
 ## Recommendation for Adults
 
-Nah nah nah na naaaaaaaaaaaaa.
-
-{% include forms/race-children.html %}
+{% include forms/race-adults.html %}
 
 ## Adaptations for Children & Teens
-
-Nah nah nah na naaaaaaaaaaaaa.
 
 {% include forms/race-children.html %}
