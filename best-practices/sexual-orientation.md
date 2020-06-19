@@ -1,6 +1,5 @@
 ---
 pageTitle: Sexual Orientation
-thumbnail: "/images/square-gradient.gif"
 partner:
   partner-description: Human Rights Campaign envisions a world where LGBTQ people are ensured of their basic equal rights, and can be open, honest and safe at home, at work and in the community.
   partner-name: 'Human Rights Campaign'

@@ -1,6 +1,5 @@
 ---
 pageTitle: Pronouns
-thumbnail: "/images/square-gradient.gif"
 partner:
   partner-description: The National Center for Transgender Equality’s mission is to
     partner with a nationwide community of transgender people, allies, and advocates

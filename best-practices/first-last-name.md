@@ -1,6 +1,5 @@
 ---
 pageTitle: First & Last Name
-thumbnail: "/images/square-gradient.gif"
 partner:
   partner-description: The World Wide Web Consortium (W3C) is an international community that develops open standards to ensure the long-term growth of the Web.
   partner-name: 'The World Wide Web Consortium'

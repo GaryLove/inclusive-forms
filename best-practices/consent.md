@@ -1,6 +1,5 @@
 ---
 pageTitle: Consent to Date Collection & Use
-thumbnail: "/images/square-gradient.gif"
 partner:
   partner-description: By using the power of law to strengthen the social safety net, and remove the barriers low-income seniors face in trying to access the services they need, we work to ensure the future we all envision for our loved ones and ourselves.
   partner-name: 'Data for Black Lives'
