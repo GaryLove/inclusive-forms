@@ -23,7 +23,7 @@ methodology: "<p></p>"
 
 ## Recommendation for Adults
 
-{% include forms/race-adults.html %}
+{% include forms/race-children.html %}
 
 ## Adaptations for Children & Teens
 
