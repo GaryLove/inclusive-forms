@@ -6,45 +6,46 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body id="is-best-practice">
 <div class="container">
     <div class="row">
-        <div class="column" id="content">
-                
-            <h1>{{ pageTitle }}</h1>
-            Published: {{ page.date | date: "%B %e, %Y" }}<br />
-            {% if lastmod %}
-            Last modified: {{ lastmod | date: "%B %e, %Y" }}
-            {% endif %}
-            <img src="{{ thumbnail }}">
-            <div id="partner">
-                {{ partner.partner-name }}
-                <img src="{{ partner.partner-logo }}">
+        <main role="main">
+            <div class="column" id="content">
+                <h1>{{ pageTitle }}</h1>
+                <div id="publish-date">
+                    Published: {{ page.date | date: "%B %e, %Y" }}
+                    {% if lastmod %}
+                        <br />Last modified: {{ lastmod | date: "%B %e, %Y" }}
+                    {% endif %}
+                </div>
+                <div id="partner">
+                    <h2>Partner: <a href="{{ partner.partner-url }}">{{ partner.partner-name }}</a></h2>
+                    <img src="{{ partner.partner-logo }}">
+                    <p>{{ partner.partner-description }}</p>
+                    <p>Please consider supporting their work as a thank you for their gudience on this recommendation.</p>
+                    <p><a href="{{ partner.partner-donate }}" class="donate">{{ partner.partner-donate }}</a></p>
+                </div>
+                <div id="recommendation">
+                    {{ content }}
+                </div>
+                <div id="methodology">
+                    <h2>Methodology</h2>
+                    {{ methodology }}
+                </div>
+            </div>
+        </main>
+        <nav aria-label="Main Navigation" role="navigation">
+            <div class="column" id="navigation">
                 <ul>
-                    <li><a href="{{ partner.partner-url }}">{{ partner.partner-url }}</a></li>
-                    <li><a href="{{ partner.partner-donate }}">{{ partner.partner-donate }}</a></li>
+                {% for best-practice in collections.best-practices %}
+                    <li{% if page.url == best-practice.url %} class="active"{% endif %}><a href="{{ best-practice.url }}">{{ best-practice.data.pageTitle }}</a></li>
+                {% endfor %}
                 </ul>
-                <p>{{ partner.partner-description }}</p>
             </div>
-            <div id="recommendation">
-                {{ content }}
-            </div>
-            <div id="methodology">
-                <h2>Methodology</h2>
-                {{ methodology }}
-            </div>
-        </div>
-        <div class="column" id="navigation">
-            <ul>
-            {% for best-practice in collections.best-practices %}
-                <li{% if page.url == best-practice.url %} class="active"{% endif %}><a href="{{ best-practice.url }}">{{ best-practice.data.pageTitle }}</a></li>
-            {% endfor %}
-            </ul>
-        </div>
+        </nav>
     </div>
 </div>
 </body>
