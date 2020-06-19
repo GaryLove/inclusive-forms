@@ -9,5 +9,25 @@ fields:
 - type: text
   name: pageTitle
   label: Page Title
+  hidden: true
+- name: header
+  type: text
+  config:
+    required: false
+  label: Header
+- name: subhead
+  type: text
+  config:
+    required: false
+  label: Subhead
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Description
 pages:
 - index.md
