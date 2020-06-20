@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Inclusive Forms</title>
-        <meta name="description" content="">
+        <meta name="description" content="{{ description }}">
         <meta name="author" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/main.css">
@@ -27,7 +27,7 @@
                             <div class="best-practice"> 
                                 <h4><a href="{{ best-practice.url }}">{{ best-practice.data.pageTitle }}</a></h4>
                                 Published: {{ best-practice.date | date: "%B %e, %Y" }}<br />
-                                <a href="{{ best-practice.url }}"><img src="{{ best-practice.data.thumbnail }}"></a>
+                                <a href="{{ best-practice.url }}"><img src="{{ best-practice.data.thumbnail }}" alt=""></a>
                                 {{ best-practice.data.methodology }}
                             </div>
                         {% endfor %}

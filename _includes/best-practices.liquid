@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Inclusive Forms</title>
-    <meta name="description" content="">
+    <title>Inclusive {{ pageTitle }} Forms</title>
+    <meta name="description" content="Equitable practices for capturing {{ pageTitle | downcase }} data online or on paper.">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/main.css">
@@ -23,7 +23,7 @@
                 </div>
                 <div id="partner">
                     <h2>Partner: <a href="{{ partner.partner-url }}">{{ partner.partner-name }}</a></h2>
-                    <img src="{{ partner.partner-logo }}">
+                    <img src="{{ partner.partner-logo }}" alt="{{ partner.partner-name }} Logo">
                     <p>{{ partner.partner-description }}</p>
                     <p>Please consider supporting their work as a thank you for their gudience on this recommendation.</p>
                     <p><a href="{{ partner.partner-donate }}" class="donate">{{ partner.partner-donate }}</a></p>
