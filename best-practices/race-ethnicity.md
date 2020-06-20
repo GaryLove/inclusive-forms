@@ -1,6 +1,5 @@
 ---
-pageTitle: Race and ethnicity
-thumbnail: "/images/square-gradient.gif"
+pageTitle: Race and Ethnicity
 partner:
   partner-name: National Equity Project
   partner-url: https://www.nationalequityproject.org/
@@ -10,6 +9,7 @@ partner:
     underserved by their schools and districts.
   partner-logo: "/images/rect-gradient.gif"
 methodology: "<p></p>"
+thumbnail: "/images/square-gradient.gif"
 
 ---
 ## Best Practices
