@@ -40,8 +40,8 @@
         <nav aria-label="Main Navigation" role="navigation">
             <div class="column" id="navigation">
                 <ul>
-                {% for best-practice in collections.best-practices %}<li{% if page.url == best-practice.url %} class="active"{% endif %}><a href="{{ best-practice.url }}">{{ best-practice.data.pageTitle }}</a></li>{% endfor %}
-                </ul>
+                {% for best-practice in collections.best-practices %}   <li{% if page.url == best-practice.url %} class="active"{% endif %}><a href="{{ best-practice.url }}">{{ best-practice.data.pageTitle }}</a></li>
+                {% endfor %}</ul>
             </div>
         </nav>
     </div>
